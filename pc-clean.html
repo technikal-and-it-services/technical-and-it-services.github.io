@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профилактика на компютри</title>
+    <link rel="shortcut icon" href="https://img.pikbest.com/png-images/20250128/professional-technical-service-logo-design-for-your-business_11464354.png!sw800">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img{
+             border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+    <div class="logo">
+        <img src="https://img.pikbest.com/png-images/20250128/professional-technical-service-logo-design-for-your-business_11464354.png!sw800" width="60" height="60">
+        Технически & IT услуги
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Начало</a></li>
+
+        <!-- ТЕХНИЧЕСКИ -->
+        <li class="dropdown">
+            <a href="#">Технически услуги ▼</a>
+            <div class="dropdown-content">
+                <a href="pc-clean.html">Профилактика на компютри</a>
+                <a href="ps-clean.html">Профилактика на PlayStation</a>
+                <a href="os-install.html">Преинсталация и инсталация на ОС</a>
+            </div>
+        </li>
+
+        <!-- IT -->
+        <li class="dropdown">
+            <a href="#">IT услуги ▼</a>
+            <div class="dropdown-content">
+                <a href="video-edit.html">Видео монтаж</a>
+                <a href="web-dev.html">Разработка на сайтове</a>
+                <a href="graphic-design.html">Графичен дизайн</a>
+                <a href="thumbnails.html">Тъмбнейл дизайн</a>
+                <a href="presentations.html">Презентации и лога</a>
+            </div>
+        </li>
+
+        <li><a href="#contact">Контакт</a></li>
+    </ul>
+</nav>
+
+<script>
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+</script>
+    <div class="slider">
+        <div class="slides fade" style="background-image:url('https://pcguide.bg/wp-content/uploads/2021/05/pc-cleaning.jpg');"></div>
+</header>
+<section class="center-text">
+    <h1>Примерна поръчка на клиент</h1>
+</section>
+<section class="video-section">
+    <video width="100%" height="auto" autoplay loop muted>
+        <source src="Clean.mkv" type="video/mp4">
+        Вашият браузър не поддържа видео елементи.
+    </video>
+</section>
+<section class="testimonials">
+    <h2>Доволни клиенти</h2>
+
+    <div class="carousel">
+
+        <div class="testimonial-card active">
+            <img src="https://i.pravatar.cc/150?img=13" class="client-img">
+            <h3>Ивайло Кръстев</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Компютърът ми се ускори и температурите паднаха значително след профилактиката."</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://i.pinimg.com/474x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg" class="client-img">
+            <h3>Стоян Лазаров</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Почистването беше супер прецизно. Машината вече не шуми изобщо."</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://thumbs.dreamstime.com/b/just-moment-to-think-side-view-handsome-thoughtful-young-man-holding-hand-chin-looking-away-sitting-his-66348378.jpg" class="client-img">
+            <h3>Кристиян Димов</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"След смяна на термопаста FPS-ът ми се покачи осезаемо."</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" class="client-img">
+            <h3>Петко Тодоров</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Бърза и качествена профилактика! Ще ползвам пак."</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://img.freepik.com/photos-premium/portrait-jeune-homme-portant-chemise-capuche-debout-devant-restaurant_1048944-29506432.jpg?semt=ais_hybrid&w=740&q=80" class="client-img">
+            <h3>Мирослав Маринов</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Машината ми е като нова. Много професионално обслужване."</p>
+        </div>
+
+    </div>
+
+    <div class="carousel-buttons">
+        <button onclick="prevSlide()">◀</button>
+        <button onclick="nextSlide()">▶</button>
+    </div>
+</section>
+
+<section class="services">
+    <h1>Профилактика на компютри</h1>
+    <p>Почистване, термопаста, оптимизация и подобряване на работата на вашия компютър.</p>
+    
+    <div class="service-grid">
+        <div class="service-box">
+            <h2>Пълно почистване от прах</h2>
+            <p>Премахваме прах, влакна и други замърсявания, които забавят компютъра.</p>
+        </div>
+        <div class="service-box">
+            <h2>Пълно почистване на системата</h2>
+            <p>Премахване на ненужни файлове, програми и процеси, които забавят компютъра.</p>
+        </div>
+        <div class="service-box">
+            <h2>Подобрено охлаждане</h2>
+            <p>Почистване на вентилатори и компоненти за по-ниски температури и по-тиха работа.</p>
+        </div>
+        <div class="service-box">
+            <h2>Ускоряване на Windows</h2>
+            <p>Оптимизиране на стартиращи приложения, услуги и настройки за по-бърза работа на системата.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h2>Контакти</h2>
+    <p>Телефон: +359883303421</p>
+    <p>Email: cvetilianmarikov@gmail.com</p>
+    <p>Цветилиан Мариков</p>
+</footer>
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+    let slides = document.getElementsByClassName("slides");
+    for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+    slideIndex++;
+    if (slideIndex > slides.length) slideIndex = 1;
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000);
+}
+</script>
+<script>
+let index = 0;
+const cards = document.querySelectorAll(".testimonial-card");
+
+function showSlide(i) {
+    cards.forEach(card => card.classList.remove("active"));
+    cards[i].classList.add("active");
+}
+
+function nextSlide() {
+    index = (index + 1) % cards.length;
+    showSlide(index);
+}
+
+function prevSlide() {
+    index = (index - 1 + cards.length) % cards.length;
+    showSlide(index);
+}
+
+/* Автоматично сменяне на клиентите */
+setInterval(nextSlide, 5000);
+</script>
+</body>
+</html>
