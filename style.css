@@ -760,6 +760,283 @@ body {
     text-align: center;
     color: #444;
 }
+/* === Основен стил === */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a0a0a;
+    padding: 12px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+/* === Лого === */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo img {
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+.logo img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* === Линкове === */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 17px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background: #1f1f1f;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+}
+
+/* === Dropdown === */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    min-width: 220px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    animation: fade 0.2s ease;
+}
+
+.dropdown-content a {
+    padding: 12px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background: #222;
+    padding-left: 18px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+@keyframes fade {
+    from {opacity:0; transform: translateY(-10px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+/* === Mobile menu === */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 28px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        height: 100%;
+        width: 250px;
+        background: #0a0a0a;
+        flex-direction: column;
+        padding-top: 80px;
+        transition: 0.4s ease;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.5);
+    }
+
+    .nav-links.open {
+        right: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        position: relative;
+        box-shadow: none;
+    }
+}
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background: #0a0a0a;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+.menu-btn {
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Desktop menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: #202020;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.drop-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.drop-btn:hover {
+    background: #202020;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #111;
+    padding: 10px 0;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 260px;
+        height: 100%;
+        background: #0a0a0a;
+        flex-direction: column;
+        padding-top: 80px;
+        gap: 10px;
+        transition: 0.4s ease;
+    }
+
+    .nav-links.open {
+        right: 0;
+    }
+
+    /* Dropdown mobile */
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown-content {
+        position: relative;
+        top: 0;
+        background: #111;
+        width: 100%;
+    }
+
+    .drop-btn {
+        width: 100%;
+        text-align: left;
+        padding: 12px;
+        background: #111;
+    }
+
+    .drop-btn.active + .dropdown-content {
+        display: flex;
+    }
+}
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -831,4 +1108,187 @@ body {
         right: 0;
     }
 }
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
 
+/* NAVBAR WRAPPER */
+.navbar {
+    background: #0a0a0a;
+    color: white;
+    width: 100%;
+}
+
+/* LOGO + BUTTON AREA */
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 17px;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+.menu-btn {
+    font-size: 32px;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+
+/* Desktop menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px 0 15px 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px;
+        background: #0a0a0a;
+        border-top: 1px solid #222;
+    }
+
+    /* Отваряне на менюто */
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li a {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background: #0a0a0a;
+    color: white;
+    width: 100%;
+}
+
+/* LOGO + MENU */
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    white-space: nowrap; /* предотвратява пренасяне на текст */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    white-space: nowrap; /* текстът винаги на един ред */
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+.menu-btn {
+    font-size: 32px;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+
+/* Desktop меню */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px 0 15px 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px;
+        background: #0a0a0a;
+        border-top: 1px solid #222;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li a {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .nav-header {
+        flex-wrap: nowrap; /* текстът не се пренася */
+    }
+}
+.btn-custom {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #ffffff;
+    color: #000;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    transition: 0.35s ease;
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.3);
+}
+
+.btn-custom:hover {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+    transform: translateY(-3px);
+}
