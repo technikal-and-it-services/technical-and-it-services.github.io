@@ -15,42 +15,27 @@
 <body>
 
 <header>
-   <nav class="navbar">
+  <nav class="navbar">
     <div class="logo">
-        <img src="https://img.pikbest.com/png-images/20250128/professional-technical-service-logo-design-for-your-business_11464354.png!sw800" width="60" height="60">
-        Технически & IT услуги
+        <img src="https://img.pikbest.com/png-images/20250128/professional-technical-service-logo-design-for-your-business_11464354.png!sw800" width="50">
+        <span>Технически & IT услуги</span>
     </div>
 
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-btn" id="menuBtn">☰</div>
 
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Начало</a></li>
-
-        <!-- ТЕХНИЧЕСКИ -->
-        <li class="dropdown">
-            <a href="#">Технически услуги ▼</a>
-            <div class="dropdown-content">
-                <a href="pc-clean.html">Профилактика на компютри</a>
-                <a href="ps-clean.html">Профилактика на PlayStation</a>
-                <a href="os-install.html">Преинсталация и инсталация на ОС</a>
-            </div>
-        </li>
-
-        <!-- IT -->
-        <li class="dropdown">
-            <a href="#">IT услуги ▼</a>
-            <div class="dropdown-content">
-                <a href="video-edit.html">Видео монтаж</a>
-                <a href="web-dev.html">Разработка на сайтове</a>
-                <a href="graphic-design.html">Графичен дизайн</a>
-                <a href="thumbnails.html">Тъмбнейл дизайн</a>
-                <a href="presentations.html">Презентации и лога</a>
-            </div>
-        </li>
-
+        <li><a href="pc-clean.html">Компютърна профилактика</a></li>
+        <li><a href="ps-clean.html">PlayStation профилактика</a></li>
+        <li><a href="os-install.html">Инсталация на ОС</a></li>
+        <li><a href="video-edit.html">Видео монтаж</a></li>
+        <li><a href="web-dev.html">Уеб сайтове</a></li>
+        <li><a href="graphic-design.html">Графичен дизайн</a></li>
+        <li><a href="thumbnails.html">Тъмбнейли</a></li>
         <li><a href="contact.html">Контакт</a></li>
     </ul>
 </nav>
+
 
 <script>
 function toggleMenu() {
@@ -239,7 +224,16 @@ function googleTranslateElementInit() {
 }
 </script>
 
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.onclick = () => {
+    navLinks.classList.toggle("open");
+};
+</script>
+
 
 </body>
 </html>
+
