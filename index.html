@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технически и ИТ услуги</title>
+    <link rel="shortcut icon" href="https://img.pikbest.com/png-images/20250128/professional-technical-service-logo-design-for-your-business_11464354.png!sw800">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img{
+             border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+   <nav class="navbar">
+    <div class="logo">
+        <img src="https://img.pikbest.com/png-images/20250128/professional-technical-service-logo-design-for-your-business_11464354.png!sw800" width="60" height="60">
+        Технически & IT услуги
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Начало</a></li>
+
+        <!-- ТЕХНИЧЕСКИ -->
+        <li class="dropdown">
+            <a href="#">Технически услуги ▼</a>
+            <div class="dropdown-content">
+                <a href="pc-clean.html">Профилактика на компютри</a>
+                <a href="ps-clean.html">Профилактика на PlayStation</a>
+                <a href="os-install.html">Преинсталация и инсталация на ОС</a>
+            </div>
+        </li>
+
+        <!-- IT -->
+        <li class="dropdown">
+            <a href="#">IT услуги ▼</a>
+            <div class="dropdown-content">
+                <a href="video-edit.html">Видео монтаж</a>
+                <a href="web-dev.html">Разработка на сайтове</a>
+                <a href="graphic-design.html">Графичен дизайн</a>
+                <a href="thumbnails.html">Тъмбнейл дизайн</a>
+                <a href="presentations.html">Презентации и лога</a>
+            </div>
+        </li>
+
+        <li><a href="contact.html">Контакт</a></li>
+    </ul>
+</nav>
+
+<script>
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+</script>
+
+    <!-- SLIDER -->
+    <div class="slider">
+        <div class="slides fade" style="background-image:url('https://luxdigital.bg/wp-content/uploads/2021/02/montage.jpg');"></div>
+        <div class="slides fade" style="background-image:url('https://pcguide.bg/wp-content/uploads/2021/05/pc-cleaning.jpg');"></div>
+        <div class="slides fade" style="background-image:url('https://eastcomputerservise.com/wp-content/uploads/2023/11/wgettyimages-1238265324.webp');"></div>
+    </div>
+
+    <div class="gradient-overlay"></div>
+
+    <div class="hero-text">
+        <h1 class="fade-in">Технически и ИТ услуги</h1>
+        <p class="fade-in-delay">Професионални решения за техника, дизайн, монтаж и разработка</p>
+        <a href="#services" class="btn">Разгледай услугите</a>
+    </div>
+</header>
+
+<section id="services" class="services">
+    <h2>Основни услуги</h2>
+
+    <div class="service-grid">
+
+        <div class="service-box">
+            <h3>Технически услуги</h3>
+            <p>Профилактика, оптимизация и инсталации.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>IT услуги</h3>
+            <p>Дизайн, монтаж, сайтове, тъмбнейли и още.</p>
+        </div>
+
+    </div>
+</section>
+<section class="testimonials" id="testimonials">
+    <h2>Доволни клиенти</h2>
+
+    <div class="carousel">
+
+        <div class="testimonial-card active">
+            <img src="https://i.pravatar.cc/150?img=12" class="client-img">
+            <h3>Иван Петров</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Много бърза и качествена профилактика на компютъра ми. Препоръчвам!"</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/150?img=23" class="client-img">
+            <h3>Мария Стоянова</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Професионален монтаж на YouTube видео. Получих уникален резултат!"</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/150?img=33" class="client-img">
+            <h3>Георги Николов</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Направиха ми страхотен сайт – модерен, бърз и удобен."</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/150?img=44" class="client-img">
+            <h3>Симона Димитрова</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Профилактиката на PlayStation-а ми беше направена перфектно. Работи като нов!"</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/150?img=51" class="client-img">
+            <h3>Калоян Марков</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Получих невероятен тъмбнейл дизайн – много професионален и качествен!"</p>
+        </div>
+
+    </div>
+
+    <div class="carousel-buttons">
+        <button onclick="prevSlide()">◀</button>
+        <button onclick="nextSlide()">▶</button>
+    </div>
+</section>
+<footer id="contact">
+    <h2>Контакти</h2>
+    <p>Телефон: <b>+359883303421</b></p>
+    <p>Email: <b>cvetilianmarikov@gmail.com</b></p>
+    <p>Цветилиан Мариков</p>
+</footer>
+
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+    let slides = document.getElementsByClassName("slides");
+    for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+    slideIndex++;
+    if (slideIndex > slides.length) slideIndex = 1;
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000);
+}
+</script>
+<script>
+let index = 0;
+const cards = document.querySelectorAll(".testimonial-card");
+
+function showSlide(i) {
+    cards.forEach(card => card.classList.remove("active"));
+    cards[i].classList.add("active");
+}
+
+function nextSlide() {
+    index = (index + 1) % cards.length;
+    showSlide(index);
+}
+
+function prevSlide() {
+    index = (index - 1 + cards.length) % cards.length;
+    showSlide(index);
+}
+
+/* Автоматично сменяне на клиентите */
+setInterval(nextSlide, 5000);
+</script>
+<script>
+function loadGoogleTranslate() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'bg',
+        includedLanguages: 'bg,en',
+        autoDisplay: false
+    }, 'translate-container');
+}
+
+var script = document.createElement('script');
+script.src = "//translate.google.com/translate_a/element.js?cb=loadGoogleTranslate";
+document.body.appendChild(script);
+</script>
+<script>
+function loadGoogleTranslate() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'bg',
+        includedLanguages: 'bg,en',
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+
+var gtScript = document.createElement('script');
+gtScript.src = "//translate.google.com/translate_a/element.js?cb=loadGoogleTranslate";
+document.body.appendChild(gtScript);
+</script>
+
+<div id="google_translate_element" style="display:none;"></div>
+<script>
+function toggleLanguage() {
+    const frame = document.querySelector('.goog-te-combo');
+
+    if (!frame) {
+        alert("Преводачът още се зарежда, пробвай след 1 секунда.");
+        return;
+    }
+
+    // Ако е български → превключваме на EN
+    if (frame.value === "bg") {
+        frame.value = "en";
+        document.getElementById("langBtn").textContent = "BG";
+    } 
+    // Ако е английски → превключваме на BG
+    else {
+        frame.value = "bg";
+        document.getElementById("langBtn").textContent = "EN";
+    }
+
+    frame.dispatchEvent(new Event("change"));
+}
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {pageLanguage: 'bg', includedLanguages: 'bg,en'},
+    'google_translate_element'
+  );
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
