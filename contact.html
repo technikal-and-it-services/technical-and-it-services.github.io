@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео монтаж</title>
+    <link rel="shortcut icon" href="https://img.pikbest.com/png-images/20250128/professional-technical-service-logo-design-for-your-business_11464354.png!sw800">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img{
+             border-radius: 50%;
+        }
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contacts-section {
+        padding: 60px 20px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .contacts-section h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    .contact-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contact-buttons a {
+        display: inline-block;
+        padding: 15px 25px;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .contact-buttons a:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .email-btn { background-color: #6c63ff; }
+    .facebook-btn { background-color: #3b5998; }
+    .instagram-btn { background-color: #e1306c; }
+    .call-btn { background-color: #28a745; }
+
+    @media (max-width: 500px) {
+        .contact-buttons {
+            flex-direction: column;
+        }
+        .contact-buttons a {
+            width: 80%;
+        }
+    }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+    <div class="logo">
+        <img src="https://img.pikbest.com/png-images/20250128/professional-technical-service-logo-design-for-your-business_11464354.png!sw800" width="60" height="60">
+        Технически & IT услуги
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Начало</a></li>
+
+        <!-- ТЕХНИЧЕСКИ -->
+        <li class="dropdown">
+            <a href="#">Технически услуги ▼</a>
+            <div class="dropdown-content">
+                <a href="pc-clean.html">Профилактика на компютри</a>
+                <a href="ps-clean.html">Профилактика на PlayStation</a>
+                <a href="os-install.html">Преинсталация и инсталация на ОС</a>
+            </div>
+        </li>
+
+        <!-- IT -->
+        <li class="dropdown">
+            <a href="#">IT услуги ▼</a>
+            <div class="dropdown-content">
+                <a href="video-edit.html">Видео монтаж</a>
+                <a href="web-dev.html">Разработка на сайтове</a>
+                <a href="graphic-design.html">Графичен дизайн</a>
+                <a href="thumbnails.html">Тъмбнейл дизайн</a>
+                <a href="presentations.html">Презентации и лога</a>
+            </div>
+        </li>
+
+        <li><a href="#contact">Контакт</a></li>
+    </ul>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- HEADER -->
+ <section class="contacts-section">
+    <h2>Ако имаш интерес към услугите можеш да се свържеш с мен по всяко време<br>тел: +359883303421<br>email: cvetilianmarikov@gmail.com<br>Цветилиан Мариков</h2>
+    <div class="contact-buttons">
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtVcHjldzSGDZpsbnFHVQjcDXhNPwFlbtkJTtQqdZmVfgpKDHJkKTqMDGJxwGmfSbSXVpbPV" class="email-btn">Email</a>
+        <a href="tel:+359883303421" class="call-btn">Обади се</a>
+    </div>
+</section>
+
+</header>
+</body>
+</html>

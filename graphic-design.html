@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Графичен дизайн</title>
+    <link rel="shortcut icon" href="https://img.pikbest.com/png-images/20250128/professional-technical-service-logo-design-for-your-business_11464354.png!sw800">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img{
+             border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+    <div class="logo">
+        <img src="https://img.pikbest.com/png-images/20250128/professional-technical-service-logo-design-for-your-business_11464354.png!sw800" width="60" height="60">
+        Технически & IT услуги
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Начало</a></li>
+
+        <!-- ТЕХНИЧЕСКИ -->
+        <li class="dropdown">
+            <a href="#">Технически услуги ▼</a>
+            <div class="dropdown-content">
+                <a href="pc-clean.html">Профилактика на компютри</a>
+                <a href="ps-clean.html">Профилактика на PlayStation</a>
+                <a href="os-install.html">Преинсталация и инсталация на ОС</a>
+            </div>
+        </li>
+
+        <!-- IT -->
+        <li class="dropdown">
+            <a href="#">IT услуги ▼</a>
+            <div class="dropdown-content">
+                <a href="video-edit.html">Видео монтаж</a>
+                <a href="web-dev.html">Разработка на сайтове</a>
+                <a href="graphic-design.html">Графичен дизайн</a>
+                <a href="thumbnails.html">Тъмбнейл дизайн</a>
+                <a href="presentations.html">Презентации и лога</a>
+            </div>
+        </li>
+
+        <li><a href="contact.html">Контакт</a></li>
+    </ul>
+</nav>
+
+<script>
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+</script>
+    <div class="slider">
+        <div class="slides fade" style="background-image:url('https://learn.g2.com/hubfs/iStock-1191609321%20%281%29.jpg');"></div>
+</header>
+<section class="center-text">
+    <h1>Примерни поръчки на клиенти</h1>
+</section>
+
+<section class="video-section">
+    <video width="100%" height="auto" autoplay loop muted>
+        <source src="Design.mkv" type="video/mp4">
+        Вашият браузър не поддържа видео елементи.
+    </video>
+    <section class="testimonials">
+    <h2>Доволни клиенти</h2>
+
+    <div class="carousel">
+
+        <div class="testimonial-card active">
+            <img src="https://img.freepik.com/premium-photo/young-woman-looking-away-against-wall_1048944-26719886.jpg?semt=ais_hybrid&w=740&q=80" class="client-img">
+            <h3>Славена Кирилова</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Дизайнът беше уникален! Много модерен стил."</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://images.pexels.com/photos/27849543/pexels-photo-27849543.jpeg?cs=srgb&dl=pexels-liliana-crijavetchi-1662058156-27849543.jpg&fm=jpg" class="client-img">
+            <h3>Кристиан Лечев</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Бях много впечатлен от вниманието към детайлите."</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://img.freepik.com/free-photo/thoughtful-young-pretty-caucasian-girl-doing-kiss-gesture-looking-side-isolated-olive-green-background_141793-90158.jpg?semt=ais_hybrid&w=740&q=80" class="client-img">
+            <h3>Белослава Михайлова</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Получих невероятно красиви банери за реклама."</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://images.pexels.com/photos/16958950/pexels-photo-16958950/free-photo-of-man-posing-in-summer-shirt-and-sunglasses.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="client-img">
+            <h3>Данаил Миков</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Дизайнът изглежда супер професионален и качествен."</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://img.freepik.com/free-photo/joyful-young-brunette-caucasian-girl-sticks-out-tongue-isolated-purple-wall_141793-68463.jpg?semt=ais_hybrid&w=740&q=80" class="client-img">
+            <h3>Виктория Христова</h3>
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Уникални и модерни графики. Препоръчвам силно."</p>
+        </div>
+
+    </div>
+
+    <div class="carousel-buttons">
+        <button onclick="prevSlide()">◀</button>
+        <button onclick="nextSlide()">▶</button>
+    </div>
+</section>
+
+<section class="services">
+    <h1>Графичен дизайн</h1>
+    <p>Създаване на визуални материали, банери, постери и дигитална графика.</p>
+    
+    <div class="service-grid">
+        <div class="service-box">
+            <h2>Банери и плакати</h2>
+            <p>Професионален дизайн за онлайн и печатни материали.</p>
+        </div>
+        <div class="service-box">
+            <h2>Илюстрации</h2>
+            <p>Уникални графики и рисунки за проекти и кампании.</p>
+        </div>
+        <div class="service-box">
+            <h2>Снимки и обработка</h2>
+            <p>Ретуш и корекция на изображения за професионален вид.</p>
+        </div>
+        <div class="service-box">
+            <h2>Визуални концепции</h2>
+            <p>Идеи и макети за рекламни и социални проекти.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h2>Контакти</h2>
+    <p>Телефон: +359883303421</p>
+    <p>Email: cvetilianmarikov@gmail.com</p>
+    <p>Цветилиан Мариков</p>
+</footer>
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+    let slides = document.getElementsByClassName("slides");
+    for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+    slideIndex++;
+    if (slideIndex > slides.length) slideIndex = 1;
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000);
+}
+</script>
+<script>
+let index = 0;
+const cards = document.querySelectorAll(".testimonial-card");
+
+function showSlide(i) {
+    cards.forEach(card => card.classList.remove("active"));
+    cards[i].classList.add("active");
+}
+
+function nextSlide() {
+    index = (index + 1) % cards.length;
+    showSlide(index);
+}
+
+function prevSlide() {
+    index = (index - 1 + cards.length) % cards.length;
+    showSlide(index);
+}
+
+/* Автоматично сменяне на клиентите */
+setInterval(nextSlide, 5000);
+</script>
+</body>
+</html>
